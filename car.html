@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="public/public.css">
+  <link rel="stylesheet" href="css/car.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="margin">
+            <ul class="header-l">
+                <li>
+                    <em></em>
+                    <span>喜地APP</span>
+                    <i></i>
+                </li>
+                <li>
+                    <em></em>
+                    <span>关注喜地</span>
+                    <i></i>
+                </li>
+                <li>
+                    <em></em>
+                    <span>客户服务</span>
+                    <i></i>
+                </li>
+                <li>
+                    <em></em>
+                    <span>消费者告知书</span>
+                </li>
+                <li>
+                    <span>全场满98包邮</span>
+                </li>
+            </ul>
+            <div class="header-r">
+                <a class="r objdeng" href="login.html">登录</a>
+                <a class="r objzhuce" href="register.html">注册</a>
+                <span class="r">|</span>
+                <a class="r" href="">我的订单</a>
+                <div class="me r">
+                    <a href="">个人中心</a>
+                    <i></i>
+                </div>
+                <div class="r mycar cart">
+                    <em></em>
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+  <div class="wrap">
+    <div class="box"> 
+      <a class="logo" href="index.html"><img src="images/logo_hd.png" alt=""></a>
+      <div class="search">
+        <input type="text" placeholder="搜索您感兴趣的商品">
+        <div class="btn"></div>
+      </div>
+    </div>
+    <img class="flow" src="images/flow.png" alt="">
+  </div>
+  <!-- <div class="empty">
+    <img src="https://static.xidibuy.com/static/global/images/1.0.0/cart/cart-empty.png" alt="">
+    <span>您的购物车中没有商品，赶紧挑选心爱的商品塞满您的购物车吧！</span>
+    <div class="empty-b">
+      <a href="login.html"class="login">去登陆</a>
+      <a href="index.html"class="index">随便逛逛</a>
+    </div>
+  </div> -->
+
+
+  <div class="cart-m">
+      <div class="cart-pos"></div>
+      <div class="cartcoupon">
+          <div class="cart-coupon-tittle">
+              <i></i>
+              <span>优惠券</span>
+              <a><i></i></a>
+          </div>
+      </div>
+      <div class="cart-addr">
+          配送至：
+          <div class="ps">上海</div>
+
+          <span>全场满98元免邮</span>
+          <a class="cart-addr-r" href="index.html">去首页继续逛逛</a>
+
+      </div>
+    
+      <div class="w1200_container">
+          <section class="cartMain">
+              <div class="cartMain_hd cart-th">
+                  <ul class="order_lists cartTop ">
+                      <li class="list_chk">
+                      <input type="checkbox" id="all checkall" class="whole_check quan">全选</li>
+                      <li class="list_con">商品信息</li>
+                      <li class="list_price">单价（元）</li>
+                      <li class="list_amount">数量</li>
+                      <li class="list_sum">总价（元）</li>
+                      <li class="list_op">操作</li>
+                  </ul>
+              </div>
+              <div class="cartBox">
+                  <div class="order_content">
+                      
+                  </div>
+              </div>
+          <!--结算    底部-->
+          <div class="bar-wrapper">
+              <div class="bar-right">
+                  
+                  <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                  <div class="jiesuan">
+                      <a>结算</a>
+                  </div>
+              </div>
+          </div>
+          </section>
+      </div>
+  </div>
+
+
+  <div class="rec">
+    <h3>为您推荐</h3>
+    <div class="cont">
+      <ul>
+        <li>
+          <a class="tu" href="goods.html"><img src="images/66 (1).jpeg" alt=""></a>
+          <a class="name" href="goods.html">行卡上课了大流口水的房间里上大好时光的卡拉胶放得开</a>
+          <span class="price">￥179</span>
+        </li>
+        <li>
+            <a class="tu" href="goods.html"><img src="images/66 (1).jpeg" alt=""></a>
+            <a class="name" href="goods.html">行卡上课了大流口水的房间里上大好时光的卡拉胶放得开</a>
+            <span class="price">￥179</span>
+          </li>
+          <li>
+              <a class="tu" href="goods.html"><img src="images/66 (1).jpeg" alt=""></a>
+              <a class="name" href="goods.html">行卡上课了大流口水的房间里上大好时光的卡拉胶放得开</a>
+              <span class="price">￥179</span>
+            </li>
+            <li>
+                <a class="tu" href="goods.html"><img src="images/66 (1).jpeg" alt=""></a>
+                <a class="name" href="goods.html">行卡上课了大流口水的房间里上大好时光的卡拉胶放得开</a>
+                <span class="price">￥179</span>
+              </li> 
+      </ul>
+    </div>
+  </div>
+  ;
+</body>
+<script src="libs/jquery.js"></script>
+<script src="public/judge.js"></script>
+<script src="public/ajax.js"></script>
+<script src="public/cookie.js"></script>
+<script src="js/car.js"></script>
+<script> 
+    var $checke_q = $(".quan"); //全选按钮
+    var $checke_d = $(".dan"); //单选按钮
+
+    $checke_q.click(function() {
+        var that = this;
+        $checke_d.each(function() { //所有的单选按钮跟随选中的多选按钮变化
+            this.checked = that.checked;
+        })
+        $checke_q.each(function(){  //所有的多选按钮跟随选中的多选按钮变化
+            this.checked=that.checked;
+        })
+    })
+    $checke_d.change(function() {
+        let count = 0; //单选 按钮 个数
+        $checke_d.each(function() { 
+            if(this.checked) {
+                count ++;
+            }
+        })
+        if(count == $checke_d.length) {   //当count等于单选按钮的个数时 说明单选按钮全部选中了，此时多选按钮也该被选中
+            $checke_q.each(function() {
+                this.checked = true;
+            })
+        } else {
+            $checke_q.each(function() {
+                this.checked = false;
+            })
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,26 @@
+body,html,.fen{width:100%;}
+.fen{height:1px;background:#888;margin-top:5px;}
+.nav{width:1210px;margin:0 auto;font:12px/64px "";color:#222;}
+.nav span{margin:0 10px;}
+.kind{padding:20px 0 20px 25px;width:1185px;height:26px;border:1px solid #ddd;margin:0 auto 10px;font:13px/23px "";}
+.kind span{width:48px;float:left;}
+.kind a{display:block;height:25px;padding:0 10px;float:left;margin-right:20px;}
+.cont{font:12px/22px "";margin:20px auto;width:1210px;height:32px;}
+.cont a{color:#222;display:inline-block;padding:0 10px;margin-right:15px;}
+.cont a:nth-child(1){line-height:30px;}
+.cont .active{border:1px solid #ddd;}
+.list{width:1235px;height:1131px;margin:-25px 0 0 -25px;}
+.list li{width:220px;height:352px;margin:25px 0 0 25px;float:left;}
+.list .active{border:1px solid #ddd;}
+.list li .list-t{width:220px;height:222px;overflow: hidden;position: relative;}
+.list li .list-t .like{display:none;position:absolute;width:20px;height:20px;right:10px;top:10px;background:url(../images/icon.png) -75px -200px no-repeat;}
+.list li .list-t .tu{width:220px;height:222px;}
+.list li .list-t .tu img{width:100%;height:100%;}
+.list li .list-b{width:220px;padding:10px 0 15px;position:relative;}
+.list li .list-b a{display:block;margin:0 8px;height:48px;overflow:hidden;font:13px/24px "";color:#222;}
+.list li .list-b .price{display:block;font:16px/18px "";color:#00bebf;margin:10px 0 0 8px;}
+.list li .list-b .contry{line-height:18px;margin:15px 0 0 8px;}
+.list li .list-b .contry img{float:left;width:20px;height:14px;margin-right:8px;}
+.list li .list-b .contry span{float:left;font:12px/14px "";color:#777;}
+.box{position: relative;width:1210px;margin:0 auto 20px;overflow:hidden;}
+
